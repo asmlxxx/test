@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<style>
+		*{
+    margin:0;
+    padding:0;
+    }
+    body{
+        background:black;
+    }
+    .main{
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform:translate(-50%,-50%);
+    }
+    .cube{
+        width:200px;
+        height:200px;
+        background:#2980b9;
+        transform-origin:bottom right;
+        box-shadow: 0 0 15px #2980b9,
+                    0 0 30px #2980b9,
+                    0 0 60px #2980b9;
+        animation:roll 1s linear infinite;
+    }
+    .main .text{
+    width:300px;
+    height:40px;
+    position:absolute;
+    bottom:-60px;
+    overflow:hidden;
+    }
+    .main .text p{
+    color:#2980b9;
+    font-size:30px;
+    font-family: arial,helvetica,sans-serif;
+    text-shadow: 0 0 5px #2980b9,
+                 0 0 10px #2980b9,
+                 0 0 20px #2980b9;
+    }
+    @keyframes roll{
+    100%{
+        transform:translateX(-100%) rotateZ(90deg);
+    }
+
+	</style>
+	<body>
+		<div class="main">
+			<div class="cube"></div>
+		<div class="text">
+			<p>LOADING......</p>
+		</div>
+	</body>
+</html>
+
+
